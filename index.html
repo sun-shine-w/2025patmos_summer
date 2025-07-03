@@ -10,56 +10,57 @@
     <div class="container">
         <header class="header">
             <h1>팻머스 2025 여름 휴가 일정</h1>
+            <p class="subtitle">7월 · 8월 휴가 캘린더</p>
         </header>
-        
-        <main class="main">
-            <div class="calendars-container">
-                <!-- July Calendar -->
-                <div class="calendar-wrapper">
-                    <h2 class="calendar-title">7월</h2>
-                    <div class="calendar" id="july-calendar">
-                        <div class="calendar-header">
-                            <div class="day-label">일</div>
-                            <div class="day-label">월</div>
-                            <div class="day-label">화</div>
-                            <div class="day-label">수</div>
-                            <div class="day-label">목</div>
-                            <div class="day-label">금</div>
-                            <div class="day-label">토</div>
-                        </div>
-                        <div class="calendar-body" id="july-body"><!-- populated by JS --></div>
+
+        <div class="calendar-container">
+            <div class="calendar-wrapper">
+                <div class="calendar" id="july-calendar">
+                    <div class="calendar-header">
+                        <h2>7월 2025</h2>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="day-header">월</div>
+                        <div class="day-header">화</div>
+                        <div class="day-header">수</div>
+                        <div class="day-header">목</div>
+                        <div class="day-header">금</div>
+                        <div class="day-header">토</div>
+                        <div class="day-header">일</div>
+                    </div>
+                    <div class="calendar-body" id="july-body">
+                        <!-- July calendar will be populated by JavaScript -->
                     </div>
                 </div>
 
-                <!-- August Calendar -->
-                <div class="calendar-wrapper">
-                    <h2 class="calendar-title">8월</h2>
-                    <div class="calendar" id="august-calendar">
-                        <div class="calendar-header">
-                            <div class="day-label">일</div>
-                            <div class="day-label">월</div>
-                            <div class="day-label">화</div>
-                            <div class="day-label">수</div>
-                            <div class="day-label">목</div>
-                            <div class="day-label">금</div>
-                            <div class="day-label">토</div>
-                        </div>
-                        <div class="calendar-body" id="august-body"><!-- populated by JS --></div>
+                <div class="calendar" id="august-calendar">
+                    <div class="calendar-header">
+                        <h2>8월 2025</h2>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="day-header">월</div>
+                        <div class="day-header">화</div>
+                        <div class="day-header">수</div>
+                        <div class="day-header">목</div>
+                        <div class="day-header">금</div>
+                        <div class="day-header">토</div>
+                        <div class="day-header">일</div>
+                    </div>
+                    <div class="calendar-body" id="august-body">
+                        <!-- August calendar will be populated by JavaScript -->
                     </div>
                 </div>
             </div>
-
-            <!-- Legend -->
-            <div class="legend">
-                <h3>직원별 휴가 색상</h3>
-                <div class="legend-items" id="legend-items"><!-- populated by JS --></div>
-            </div>
-        </main>
-
-        <!-- Tooltip -->
-        <div class="tooltip" id="tooltip">
-            <div class="tooltip-content"></div>
         </div>
+
+        <div class="legend">
+            <h3>직원 목록</h3>
+            <div class="legend-grid" id="legend-grid">
+                <!-- Legend will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="tooltip" id="tooltip"></div>
     </div>
 
     <script src="app.js"></script>
